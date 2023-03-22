@@ -9,14 +9,15 @@
 
 <body>
 <header>
-<div class="padding">
-<ul>
-    <li class="no_marker">
+    <div class="row">
         <a href="index.html">
-        <img class="logo" src="img/logo.png" alt="logo"> 
+         <img class="logo" src="img/logo.png" alt="logo"> 
         </a>
-    </li>
+        <h2 class="center">Вeб-технологии</h2>
+    </div>
 
+<nav class="padding">
+<ul class="row">
     <li>
         <a href="index.html">О себе</a>
     </li>
@@ -29,29 +30,28 @@
         <a href="attestat.html">Запись на аттестацию</a>
     </li>
 </ul>
-</div>
+</nav>
 
 </header>
-</body>
 
 <main>
 
     <form method="get" action="http://localhost:8080/login.php">
            
-        <div class="blue row margin_bot ">
+        <div class="blue row margin_bot">
              <div class="half padding">
                 <label for="name">Фамилия
-                <input type="text" pattern="[А-Я][а-я]+" id="name"></label>
+                <input class="input" type="text" pattern="[А-Я][а-я]+" id="name"></label>
                 <p>
                 <label for="secondname">Имя
-                <input type="text" pattern="^[А-Яа-яЁё]+$" id="secondname"></label></p>
+                <input class="input" type="text" pattern="^[А-Яа-яЁё]+$" id="secondname"></label></p>
              </div>
              <div class="half padding">
                 <label for="login">Логин
-                <input type="text" pattern="^[А-Яа-яЁё]+" id="login"></label>
+                <input class="input" type="text" pattern="^[А-Яа-яЁё]+" id="login"></label>
                 <p>
                 <label for="password">Пароль
-                <input type="password" id="password"></label></p>
+                <input class="input" type="password" id="password"></label></p>
              </div>
         </div>
 
@@ -110,8 +110,7 @@
            <P><input type="submit" value="Отправить"></p>
             <input type="reset">
         </div>
-               <!--textarea name="about" id="about" placeholder="Не более 200 символов" maxlength="200"></textarea>  
-               -->
+
     </div>    
     <div class="lilac padding margin_bot">дополнительная информация
            <p> <textarea name="info" id="info" placeholder="" maxlength="200"></textarea> </p>
@@ -119,17 +118,17 @@
     </form>
 </main>
 
-<footer>
+<footer class="row">
+<div>
+    Сайт разработан Скачковым А., Copyright © 2023
+</div>
+
 <div>
     <a href="http://www.facebook.com"><img class="icon" src='img/facebook.png' /></a>
     <a href="http://www.twitter.com"><img class="icon" src='img/twitter.png' /></a>
     <a href="http://www.youtube.com"><img class="icon" src='img/youtube.png' /></a>
 </div>
 
-<div>
-    Сайт разработан Скачковым А., Copyright © 2023
-</div>
-
 </footer>
-
+</body>
 </html>
