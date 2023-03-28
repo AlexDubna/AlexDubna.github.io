@@ -43,10 +43,23 @@ footer, nav {
 	align-items: center;
 }
 
+
+/*размещение футера*/
 footer {
-    position: absolute;
-    bottom: 0;
+    /*position: absolute;
+    bottom: 0;	/*с увеличением масштаба смещается*/
+	
+	/* flex: 0 0 auto;	с уменьшением масштаба подпрыгивает*/
+
+
 }
+
+.content {
+	min-height: calc(100vh - 80px);
+}
+
+/*размещение футера*/
+
 
 table {
 	table-layout: auto;
