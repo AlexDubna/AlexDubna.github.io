@@ -31,7 +31,7 @@ nav a, nav a:visited{
 }
 
 main {
-	margin: 5% 15% 5% 15%; 
+	margin: 5% 15% 0 15%; 
 	align-items: center;
 
 }
@@ -43,23 +43,10 @@ footer, nav {
 	align-items: center;
 }
 
-
-/*размещение футера*/
 footer {
-    /*position: absolute;
-    bottom: 0;	/*с увеличением масштаба смещается*/
-	
-	/* flex: 0 0 auto;	с уменьшением масштаба подпрыгивает*/
-
-
+    position: absolute;
+    bottom: 0;
 }
-
-.content {
-	min-height: calc(100vh - 80px);
-}
-
-/*размещение футера*/
-
 
 table {
 	table-layout: auto;
